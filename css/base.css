@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{font-size:13px;line-height: 1.8;color: #555}
+.wrap{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1000px;
+}
+a{color:inherit;}
+a:hover{color:#39f;}
+
+/*头部样式*/
+.pageHeader{position: relative}
+.pageHeader .topBar{
+	background-color: #192025;
+	border-bottom: 6px #1b81c8 solid;
+	padding:7px 0;
+}
+.topBar .links,.topBar .search{
+	float: right;
+}
+.topBar .links a,.topBar .search{color: #fff}
+.topBar .links a{
+	display: block;
+	background-color: #212639;
+	border-radius: 3px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	padding: 0 18px;
+}
+
+.bottomBar .logo{float: left; padding: 17px 0}
+
+.bottomBar nav{
+	overflow: hidden;
+ 	padding-top:30px;
+ 	margin-left: 280px;
+ }
+.bottomBar nav li{float: left;width:14.285%;}
+.bottomBar nav ul li a{
+	display: block;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.mobile_key { 
+	display: none; 
+/*	width: 50px;
+	height: 50px; 
+	line-height: 50px; 
+	position: absolute; 
+	right: 4%; 
+	top: 50%; 
+	margin-top: -25px; 
+	text-align: center;*/
+}
+
+
+/*iBanner*/
+.iBanner{
+	width: 100%;
+	height: 445px;
+	position: relative;
+	overflow: hidden;
+}
+.iBanner .slide img{
+	height: auto;
+	width: 1920px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	max-width: none;
+} 
+.slide_nav{
+	width: 306px;
+	height: 142px;
+	background-image: url(../images/duo.png);
+	position: absolute;
+	z-index: 2;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -153px;
+}
+
+.slide_nav a{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px
+}
+.slide_nav a:hover span{
+	z-index: 10;
+	display: block;
+}
+.slide_nav .duo1{
+	width: 108px;
+	height: 117px;
+}
+.slide_nav .duo1 span{
+	width: 108px;
+	height: 117px;
+	background-image: url(../images/duo1.png);
+}
+.slide_nav .duo2{
+	width: 117px;
+	height: 109px;
+	left:49px; bottom:58px; 
+}
+.slide_nav .duo2 span{
+	width: 117px;
+	height: 109px;
+	background-image: url(../images/duo2.png);
+}
+
+/**产品与服务***/
+.ipro { 
+	background-image: url(../images/iprobg.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-bottom: 40px;
+}
+.iprolist{
+	text-align: center;
+	font-size: 21px; color: #305379; font-weight:bold;
+}
+.pico{
+	background-image: url(../images/ip_ico.png);
+	display: block;
+	width: 126px;
+	height: 126px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	transition:all 0.6s ease-out;
+}
+.iprolist .pico02 { background-position:-126px 0; }
+.iprolist .pico03 { background-position:-252px 0; }
+.iprolist .pico04 { background-position:-378px 0; }
+.iprolist:hover .pico {transform:rotateY(180deg)}
